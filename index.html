@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Answer & Win a Gift!</h1>
+        <form id="quizForm">
+            <label for="name">Enter Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="question">What is 5 + 3?</label>
+            <input type="number" id="answer" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Congratulations, <span id="userName"></span>! Here’s your gift:</h2>
+            <img id="giftImage" src="" alt="Gift">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
